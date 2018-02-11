@@ -11,7 +11,7 @@ body {
 }
 
 header, nav, main, footer { 
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
 /* the comma means apply the following CSS declarations to all of the listed elements */
 /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -44,7 +44,7 @@ nav ul li {}
 nav ul li a {
     text-decoration: none;
 }
-nav ul li.active a {
+.active a {
     border: 2px solid #FFFA6F;
     margin: 1em;
     padding-right: 1em;
@@ -95,9 +95,10 @@ section.forecast {
 h1, h2, h3, h4, h5, h6 {
     color: #FFFA6F;
 }
-article img {
+article p.town-article img {
     float: left;
-    padding: .5em;
+    padding-right: .5em;
+    width: 50%;
 }
 .current img {
     width: 10%;
