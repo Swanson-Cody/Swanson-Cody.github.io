@@ -1,0 +1,104 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+    font-family: roboto, sans-serif;
+    color: whitesmoke;
+    background-color: deepskyblue;
+}
+
+header, nav, main, footer { 
+    max-width: 800px;
+    margin: auto;
+/* the comma means apply the following CSS declarations to all of the listed elements */
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+}
+header h1 {
+    display: inline;
+}
+header img {
+    float: left;
+    width: 20%;
+}
+header .subheading {
+    
+}
+nav {
+    font-size: .7em;
+    margin-top: 1.5em;
+}
+nav button {
+    float: left;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li.active a {
+    border: 2px solid #FFFA6F;
+    margin: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+nav ul li a:hover {
+    color: whitesmoke;
+}
+
+main {
+    
+}
+main h2 {
+    
+}
+main figure { 
+    margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img { 
+    width: 100%; 
+}
+
+section {
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: auto; /* fill the page in the small/phone view */
+  margin: auto;
+}
+
+footer {
+    
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+section.forecast { 
+    display: none;
+}
+.titlered {
+    color: #FFFA6F;
+}
+.titleblue {
+    color: #4C53DD;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFA6F;
+}
+article img {
+    float: left;
+    padding-right: .5em;
+}
+.current img {
+    width: 10%;
+}
