@@ -66,7 +66,6 @@ nav ul li a {
 .lastLinkBorder {
     border-bottom: 1px solid rgba(255, 250, 111, 1);
 }
-}
 .active a:visited {
     padding-right: 1em;
     padding-left: 1em;
