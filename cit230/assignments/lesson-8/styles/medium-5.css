@@ -43,4 +43,11 @@
     .fixProblem {
         margin-bottom: auto;
     }
+    /*-------- Form CSS --------*/
+    #ratingvalue {
+        margin-left: -74px;
+    }
+    .stayBelow {
+    margin-top: 500px;
+    }
 }

@@ -146,6 +146,37 @@ nav ul.hide {
     grid-gap: 20px;
 }
 
+/*-------- Form CSS --------*/
+label span {
+    display: flex;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#ratingvalue {
+justify-content: center;
+margin-left: -37px;
+}
+.rowDisplay {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+.rowDisplay:first-of-type {
+    margin-left: 0;
+}
+.stayBelow {
+    margin-top: 270px;
+}
+.moveThis {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+}
 /*-------- Clearfix: Force an Element not to collapse ----------*/
 .clearfix:after {
     content: "";
