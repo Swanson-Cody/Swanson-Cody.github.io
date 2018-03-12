@@ -1,0 +1,201 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+    font-family: roboto, sans-serif;
+    color: whitesmoke;
+    background-color: deepskyblue;
+}
+
+header, nav, main, footer { 
+    max-width: 700px;
+    margin: auto;
+/* the comma means apply the following CSS declarations to all of the listed elements */
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+header {
+
+}
+.brand {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+header h1 {
+    
+}
+header img {
+    width: 6rem;
+    height: 6rem;
+}
+header .subheading {
+    text-align: center;   
+}
+nav {
+    font-size: .7em;
+    margin-top: 1.5em;
+}
+nav button {
+    background-color: #FFFA6F;
+    font-size: 1.6rem;
+    margin: .2rem 2%;
+    padding: 10px 15px 10px 15px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #87cefa;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    
+}
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(255, 250, 111, 1);
+    color: #4C53DD;
+}
+.lastLinkBorder {
+    border-bottom: 1px solid rgba(255, 250, 111, 1);
+}
+.active a:visited {
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #FFFA6F;
+}
+nav ul li a:hover {
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+main {
+    
+}
+main h2 {
+    
+}
+main figure { 
+    margin: 0 0  ; width:100%; 
+}
+main figure img { 
+    width: 100%; 
+}
+
+section {
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: auto; /* fill the page in the small/phone view */
+  margin: auto;
+}
+
+footer {
+    margin-bottom: -100%;
+    margin-top: 1em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #FFFA6F;
+}
+footer aside {
+    
+}
+footer>p {
+
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+section.forecast { 
+    display: none;
+}
+.titleyellow {
+    color: #FFFA6F;
+}
+.titleblue {
+    color: #4C53DD;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFA6F;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+article img {
+    width: 100%;
+}
+.current img {
+    width: 10%;
+}
+nav ul.hide {
+    display: none;
+}
+.gridTime {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+/*-------- Form CSS --------*/
+form {
+    margin-top: 50px;
+}
+form fieldset {
+    border-style: none;
+}
+Legend {
+    font-size: 2em;
+    margin-top: -100px;
+    color: #FFFA6F;
+}
+label span {
+    display: flex;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+#ratingvalue {
+justify-content: center;
+margin-left: -37px;
+}
+.rowDisplay {
+    display: flex;
+    flex-direction: column;
+}
+.rowDisplay:last-child {
+    flex-direction: row;
+    padding: 15px;
+    margin: -15px 0px -15px 0px;
+}
+.stayBelow {
+    margin-top: 270px;
+}
+.moveThis {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+.bttnStyle {
+    padding: 15px;
+    background-color: #FFFA6F;
+}
+/*-------- Clearfix: Force an Element not to collapse ----------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
