@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Weather Or Not Here It Comes</title>
         <meta name="author" content="Cody Swanson">
-        <meta name="description" content="Franklin Weather Forecast">
+        <meta name="description" content="Report Unusual Weather">
         <!-- external style references in the proper cascading order -->    
         <link href="https://fonts.googleapis.com/css?family=Galindo|Roboto" rel="stylesheet">
         <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -90,27 +90,29 @@
                         <option value="springfield">Springfield</option>
                     </select>
                 </label>
+                <div class="rowDisplay">
                 <label>
-                    <span>Are you in-danger?</span>
-                    <span  class="rowDisplay">
+                    <span>Are you in danger?</span>
                         <span class="rowDisplay">
                             <input type="radio" name="userDanger" value="yes"> Yes
                         </span>
+                </label>
+                <label>
                         <span class="rowDisplay">
                             <input type="radio" name="userDanger" value="maybe"> Maybe
                         </span>
+                </label>
+                <label>
                         <span class="rowDisplay">
                             <input type="radio" name="userDanger" value="no"> No
                         </span>
-                    </span>
                 </label>
+                </div>
                 <label>
-                    <p><span>Additional information or comments here:</span>
+                    <span>Additional information or comments here:</span>
                     <textarea rows="5" cols="41" name="comment"></textarea>
-                </label>
-                <label>
-                <input type="submit">
-                </label>
+                </label>   
+                <input class="bttnStyle" type="submit">
             </fieldset>
           </form>
       </main>
