@@ -18,4 +18,8 @@
     .imghover:hover {
         box-shadow: 2px 2px 9px 1px gray;
     }
+    /*-------- Form CSS --------*/
+    .bttnStyle {
+        padding: 5px;
+    }
 }

@@ -43,6 +43,7 @@ nav button {
     background-color: #FFFA6F;
     font-size: 1.6rem;
     margin: .2rem 2%;
+    padding: 10px 15px 10px 15px;
 }
 nav ul {
     list-style-type: none;
@@ -147,13 +148,24 @@ nav ul.hide {
 }
 
 /*-------- Form CSS --------*/
+form {
+    margin-top: 50px;
+}
+form fieldset {
+    border-style: none;
+}
+Legend {
+    font-size: 2em;
+    margin-top: -100px;
+    color: #FFFA6F;
+}
 label span {
     display: flex;
 }
 form label {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #ratingvalue {
 justify-content: center;
@@ -161,11 +173,12 @@ margin-left: -37px;
 }
 .rowDisplay {
     display: flex;
-    flex-direction: row;
-    margin-left: 20px;
+    flex-direction: column;
 }
-.rowDisplay:first-of-type {
-    margin-left: 0;
+.rowDisplay:last-child {
+    flex-direction: row;
+    padding: 15px;
+    margin: -15px 0px -15px 0px;
 }
 .stayBelow {
     margin-top: 270px;
@@ -176,7 +189,10 @@ margin-left: -37px;
     text-align: center;
     margin-top: 10%;
 }
-
+.bttnStyle {
+    padding: 15px;
+    background-color: #FFFA6F;
+}
 /*-------- Clearfix: Force an Element not to collapse ----------*/
 .clearfix:after {
     content: "";
