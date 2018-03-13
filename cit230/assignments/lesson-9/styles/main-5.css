@@ -196,6 +196,12 @@ margin-left: -37px;
 .makeMoreFriendly {
     padding: 15px;
 }
+
+/*-------- INDEX Franklin, MN --------*/
+.standOut {
+    text-decoration: underline;
+    font-weight: bold;
+}
 /*-------- Clearfix: Force an Element not to collapse ----------*/
 .clearfix:after {
     content: "";
