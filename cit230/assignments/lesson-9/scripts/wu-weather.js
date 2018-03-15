@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET','http://api.wunderground.com/api/1adfc4042a009ff6/conditions/q/MN/Franklin.json', true );
+weatherObject.open('GET','https://api.wunderground.com/api/1adfc4042a009ff6/conditions/q/MN/Franklin.json', true );
 
 weatherObject.send();
 
@@ -27,7 +27,7 @@ weatherObject.onload = function() {
 
 var weatherForecast = new XMLHttpRequest();
 
-weatherForecast.open('GET','http://api.wunderground.com/api/1adfc4042a009ff6/forecast/q/MN/Franklin.json', true );
+weatherForecast.open('GET','https://api.wunderground.com/api/1adfc4042a009ff6/forecast/q/MN/Franklin.json', true );
 
 weatherForecast.send();
 
