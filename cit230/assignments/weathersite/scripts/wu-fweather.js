@@ -5,7 +5,7 @@ weatherObjectF.open('GET','https://api.wunderground.com/api/1adfc4042a009ff6/con
 weatherObjectF.send();
 
 weatherObjectF.onload = function() {
-    debugger
+    
     var weatherInfo = JSON.parse(weatherObjectF.responseText);
     console.log(weatherInfo);
     
