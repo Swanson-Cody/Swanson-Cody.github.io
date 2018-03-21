@@ -204,6 +204,7 @@ section {
 .standOut {
     text-decoration: underline;
     font-weight: bold;
+    display: block;
 }
 /*-------- Clearfix: Force an Element not to collapse ----------*/
 .clearfix:after {
