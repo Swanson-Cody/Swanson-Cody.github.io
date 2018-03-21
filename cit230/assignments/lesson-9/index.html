@@ -27,11 +27,11 @@
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li class="lastLinkBorder"><a href="gallery-8.html">Gallery</a></li>
+            <li class="lastLinkBorder"><a href="gallery.html">Gallery</a></li>
         </ul>		
       </nav>
     </div>
@@ -53,16 +53,52 @@
             </h1>
             <h3>Weather Summary</h3>
             <p>
-                <div class="standOut">Current Temperature:</div> <span id="currentTemp"></span>&deg;
+                <span class="standOut">Current Temperature:</span> <span id="currentTemp"></span>&deg;
             </p>
             <p>
-                <div class="standOut">Conditions:</div> <img id="w_icon" src="" alt="current_weather"> <span id="wc_string"></span>
+                <span class="standOut">Conditions:</span> <img id="w_icon" src="https://api.wunderground.com/api/1adfc4042a009ff6/conditions/q/MN/Franklin.json" alt="current_weather"> <span id="wc_string"></span>
             </p>
             <p>
-                <div class="standOut">Wind:</div> <span id="w_speed"></span>
+                <span class="standOut">Wind:</span> <span id="w_speed"></span>
             </p>
             <p>
-                <div class="standOut">Current Forecast: </div> <span id="text_w_forecast"></span>
+                <span class="standOut">Current Forecast: </span> <span id="text_w_forecast"></span>
+            </p>
+        </section>
+        <section>
+            <h1>
+                <span id="placeG"></span>
+            </h1>
+            <h3>Weather Summary</h3>
+            <p>
+                <span class="standOut">Current Temperature:</span> <span id="currentTempG"></span>&deg;
+            </p>
+            <p>
+                <span class="standOut">Conditions:</span> <img id="w_iconG" src="https://api.wunderground.com/api/1adfc4042a009ff6/conditions/q/TX/Greenville.json" alt="current_weather"> <span id="wc_stringG"></span>
+            </p>
+            <p>
+                <span class="standOut">Wind:</span> <span id="w_speedG"></span>
+            </p>
+            <p>
+                <span class="standOut">Current Forecast: </span> <span id="text_w_forecastG"></span>
+            </p>
+        </section>
+        <section>
+            <h1>
+                <span id="placeS"></span>
+            </h1>
+            <h3>Weather Summary</h3>
+            <p>
+                <span class="standOut">Current Temperature:</span> <span id="currentTempS"></span>&deg;
+            </p>
+            <p>
+                <span class="standOut">Conditions:</span> <img id="w_iconS" src="https://api.wunderground.com/api/1adfc4042a009ff6/conditions/q/OR/Springfield.json" alt="current_weather"> <span id="wc_stringS"></span>
+            </p>
+            <p>
+                <span class="standOut">Wind:</span> <span id="w_speedS"></span>
+            </p>
+            <p>
+                <span class="standOut">Current Forecast: </span> <span id="text_w_forecastS"></span>
             </p>
         </section>
       </main>
@@ -76,7 +112,9 @@
 
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/currentdate.js"></script>
+      <script src="scripts/wu-fweather.js"></script>
+      <script src="scripts/wu-sweather.js"></script>
+      <script src="scripts/wu-gweather.js"></script>
       <script src="scripts/windchill.js"></script>
-      <script src="scripts/wu-weather.js"></script>
     </body>
 </html>
