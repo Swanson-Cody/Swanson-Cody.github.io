@@ -9,6 +9,8 @@ table, th, td {
 table {
     border: 1px solid #e7f0ed;
     box-shadow: 7px 10px 18px #628ca6;
+    margin-top: 5em;
+    margin-left: 5em;
 }
 caption {
     border: 1.5px solid #bbbbbb;

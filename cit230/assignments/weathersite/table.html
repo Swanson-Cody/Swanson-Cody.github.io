@@ -7,9 +7,33 @@
         <meta name="description" content="Html Table for ACME Wildwest">
         <link href="styles/normalize.css" rel="stylesheet">
         <link href="styles/table.css" rel="stylesheet">
+        <link href="styles/main-5.css" rel="stylesheet">
+        <link href="styles/medium-5.css" rel="stylesheet">
+        <link href="styles/large-5.css" rel="stylesheet">
     </head>
     <body>
         <main>
+            <div class="topPortion">
+              <header>
+                <div class="brand">
+                <img src="images/logo.PNG" alt="The site logo">
+                  <h1><span class="titleyellow">Weather Or Not</span><span class="titleblue"> Here It Comes</span></h1>
+                </div>
+                  <div class="subheading">&quot;Weather Entertainment Made Easy.&quot;</div>
+              </header>
+              <!-- site navigation use placeholder references -->
+              <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="franklin.html">Franklin</a></li>
+                    <li><a href="greenville.html">Greenville</a></li>
+                    <li><a href="springfield.html">Springfield</a></li>
+                    <li class="active"><a href="#">Storm Center</a></li>
+                    <li class="lastLinkBorder"><a href="gallery.html">Gallery</a></li>
+                </ul>		
+              </nav>
+            </div>
             <table>
                 <caption>
                     ACME Wildwest
