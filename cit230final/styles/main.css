@@ -1,0 +1,297 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #df8b27;
+    min-width: 366px;
+}
+
+header, nav, main, footer { 
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    background-color: #f4d539;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,   0, 0, 0.19);
+}
+
+header {
+    border: 4px solid black;
+    background-color: #f4d539;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,   0, 0, 0.19);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Chicle', cursive;
+}
+
+h1 {
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #2e7b30;
+    border-top: 4px solid #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a:link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #df8b27;
+    padding: 1em;
+}
+
+nav a:visited {
+    color: rgba(223, 139, 39, 0.5);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+nav ul.hide {
+    display: none;
+}
+
+.active {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a:link {
+    color: #df8b27;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(223, 139, 39, 0.5);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+picture {
+    display: flex;
+    justify-content: center;
+}
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.indexPositioning {
+    padding: 0px 5px 5px 5px;
+}
+
+.indexPositioning2 img {
+    display: flex;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2e7b30;
+    border: 4px solid #000000;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,   0, 0, 0.19);
+}
+
+footer p {
+    margin: auto;
+    margin: 5px;
+}
+
+
+/*-------- Adventure Page --------*/
+.toursStyle ul {
+    list-style: none;
+}
+
+.getBold {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.toursGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+
+.makeGreen {
+    color: #2e7b30;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.toursGiveSpace h2 {
+    text-align: center;
+}
+
+.toursGiveSpace p {
+    text-align: center;
+}
+
+
+/*--------- Events Page ---------*/
+/*.getBold and .makeGreen used in Adventure page is also used in Events page*/
+.eventsGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventsGiveSpace h3 {
+    text-align: center;
+}
+
+.eventsPositioning ul {
+    list-style: none;
+    margin-top: -20px;
+}
+
+.eventsPositioning li {
+    padding-right: 10px;
+}
+
+.eventsGiveSpace h2 {
+    text-align: center;
+}
+
+.oganizeOrder:nth-of-type(even) {
+    padding: 5px 0px 5px 0px;
+}
+
+.emphTime {
+    font-style: italic;
+}
+
+.eventsGiveSpace p {
+    text-align: center;
+}
+
+.bttnStyle {
+    padding: 20px;
+    margin-top: 5px;
+}
+
+
+/*--------- Contact Us Page ---------*/
+/*.getBold and .makeGreen used in Adventure/Events page is also used in Contact Us page. Additionally, .bttnStyle, form, fieldset, and label from Events page is also used in Contact Us page.*/
+.contactGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+
+.contactGiveSpace h2 {
+    text-align: center;
+}
+
+.contactGiveSpace ul {
+    list-style: none;
+}
+.contactGiveSpace legend {
+    padding-top: 30px;
+}
+
+.iframeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*----------Sales Page-----------*/
+.salesGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-------- Services Page ---------*/
+.repairsGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+
+
+
+/*----------- Reference Page ------------*/
+.referenceGiveSpace {
+    padding: 0px 5px 5px 5px;
+}
+
+.referenceGiveSpace li:nth-of-type(odd) {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.referenceGiveSpace li:nth-of-type(even) {
+    
+}
+
+
+/*-------- Clearfix: Force an Element not to collapse --------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

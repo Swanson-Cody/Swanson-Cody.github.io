@@ -1,0 +1,24 @@
+{
+	"services":	[ 	
+		{ 
+			"title": "Flat Repair",
+			"description": "Are your bicycle wheels slowly deflating? Do you have a hole where air is escaping? We can fix that for you!",
+			"price": "10.00"
+		},
+		{ 
+			"title": "Rim Repair",
+			"description": "If your rim is bent, it can get rocky while riding, worse, overtime it will buckle more and more. We can fix it for you so that you can continue to enjoy your ride.",
+			"price": "25.00"
+		},
+		{ 
+			"title": "Chain Repair",
+			"description": "We understand how important biking is, because of this, we offer fast and reliable chain repair so that we can get you back to cycling.",
+			"price": "15.00"
+		},
+		{ 
+			"title": "Custom Bike Paint Makeover",
+			"description": "Always wanted your dream bike? We can make it happen! Custom paint jobs available. Choose from our list of designs or have us create your own. We can make it happen!",
+			"price": "200.00"
+		},
+	]
+}

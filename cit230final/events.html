@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | Events</title>
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Events Page for The Mountain Spoke at Bozeman, Montana."> 
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="The Mountain Spoke logo.">
+            </div>
+            <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="adventure-tours.html">Adventure Tours</a>
+                    </li>
+                    <li class="active">
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="sales.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <picture>
+                <source media="(min-width: 64em)" srcset="images/bike-event-large.jpg">
+                <source media="(min-width: 37.5em)" srcset="images/bike-event-medium.jpg">
+                <img src="images/bike-event-small.jpg" alt="A red bike riding down a road.">
+            </picture>
+            <h1>
+                The Mountain Spoke
+            </h1>
+            <div class="eventsGiveSpace">
+                <section>
+                    <h2>Event Spotlight</h2>
+                    <p>
+                        Want to help with charity? Want to go on a journey of a lifetime? The event spotlight is highlighting for you exactly what you are looking for.
+                    </p>
+                </section>
+                <section>
+                    <h3 class="makeGreen">
+                        Annual Event&colon; Cycle the Continental Divide!
+                    </h3>
+                    <div class="eventsPositioning">
+                    <ul>
+                        <li>
+                            <span class="getBold">Date&colon;</span> July 6, 2018
+                        </li>
+                        <li>
+                            <span class="getBold">Route&colon;</span> <div class="oganizeOrder">1. Canada - Banff, AB <span class="emphTime">to</span> Rooseville, MT</div> <div class="oganizeOrder">2. Rooseville, MT <span class="emphTime">to</span> Polaris, MT</div> <div class="oganizeOrder">3. Polaris, MT <span class="emphTime">to</span> South Pass City, WY</div> <div class="oganizeOrder">4. South Pass City, WY <span class="emphTime">to</span> Silverthorne, CO</div> <div class="oganizeOrder">5. Silverthorne, CO <span class="emphTime">to</span> Platoro, CO</div> <div class="oganizeOrder">6. Platoro, CO <span class="emphTime">to</span> Pie Town, NM</div> <div class="oganizeOrder">7. Pie Town, NM <span class="emphTime">to</span> Antelope Wells, NM</div>
+                        </li>
+                        <li>
+                            <span class="getBold">Cost&colon;</span> $20.00 (Will go towards charity. Map of route will be provided. Additional maps may be purchased as desired.)
+                        </li>
+                        <li>
+                            <span class="getBold">Requirements&colon;</span> Must be 18 years of age or older. Must have your own bike. Must bring your own food, water, and sleeping supplies.
+                        </li>
+                    </ul>
+                    </div>
+                </section>
+                <section>
+                    <form>
+                        <fieldset>
+                            <legend class="makeGreen">
+                                Registration Form
+                            </legend>
+                            <label>
+                                <span>Full Name&colon;</span><input type="text" name="fullName" value="" pattern="[a-zA-Z ]{5,}" required>
+                            </label>
+                            <label>
+                                <span>Email&colon;</span><input type="email" name="email" value="" placeholder="example@gmail.com" required>
+                            </label>
+                            <label>
+                                <span>Phone Number&colon;</span><input type="tel" name="telephone" value="" pattern="[0-9 -/]{10,}" required>
+                            </label>
+                            <label>
+                                <span>Date of Birth&colon;</span><input type="date" name="birthday" required>
+                            </label>
+                            <label>
+                               <span>Country or State&colon;</span><input type="text" name="location" value="" pattern="[a-zA-Z , ]" required>
+                            </label>
+                            <label>
+                                <span>Special Accomodations or Comments&colon;</span>
+                            <textarea rows="5" cols="40" name="comment"></textarea>
+                            </label>
+                            <input class="bttnStyle" type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy;2018 &#124; The Mountain Spoke
+            </p>
+            <p>
+                <a href="reference.html">Resource Reference Page</a>
+            </p>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>

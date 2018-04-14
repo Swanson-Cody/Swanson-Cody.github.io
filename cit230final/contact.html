@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | Contact Us</title>
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Contact Us Page for The Mountain Spoke at Bozeman, Montana."> 
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="The Mountain Spoke logo.">
+            </div>
+            <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="adventure-tours.html">Adventure Tours</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="sales.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <picture>
+                <source media="(min-width: 64em)" srcset="images/bike-shop-large.jpg">
+                <source media="(min-width: 37.5em)" srcset="images/bike-shop-medium.jpg">
+                <img src="images/bike-shop-small.jpg" alt="The Mountain Spoke Bike Shop.">
+            </picture>
+            <h1>
+                The Mountain Spoke
+            </h1>
+            <div class="contactGiveSpace">
+                <section>
+                    <h2>
+                        Contact Us!
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="getBold">Phone Number&colon;</span> 406-158-bike
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span class="getBold">Address&colon;</span> 3950 Valley Commons Drive Bozeman, MT
+                        </li>
+                    </ul>
+                    <div class="iframeContainer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627756007!2d-111.09290082007841!3d45.672272879206254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523644727923" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section>
+                    <form>
+                        <fieldset>
+                            <legend class="makeGreen">
+                                E-mail Form
+                            </legend>
+                            <label>
+                                <span>Full Name&colon;</span><input type="text" name="fullName" value="" pattern="[a-zA-Z ]{5,}" required>
+                            </label>
+                            <label>
+                                <span>Your Email&colon;</span><input type="email" name="email" value="" placeholder="example@gmail.com" required>
+                            </label>
+                            <label>
+                                <span>Topic:</span><input type="text" name="topicChoice" list="topicIdeas">
+
+                                <datalist id="topicIdeas">
+                                    <option value="Purchase an Adventure"></option>
+                                    <option value="Get Repairs"></option>
+                                    <option value="Buy a Bike"></option>
+                                    <option value="Have a Question"></option>
+                                    <option value="Compliment"></option>
+                                    <option value="Critique"></option>
+                                </datalist>
+
+                            </label>
+                            <label>
+                                <span>Message:</span>
+                                <textarea rows="8" cols="41" name="comment"></textarea>
+                            </label>   
+                            <input class="bttnStyle" type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy;2018 &#124; The Mountain Spoke
+            </p>
+            <p>
+                <a href="reference.html">Resource Reference Page</a>
+            </p>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>

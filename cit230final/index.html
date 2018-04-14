@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke | Home Page</title>
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Home Page for The Mountain Spoke at Bozeman, Montana."> 
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="The Mountain Spoke logo.">
+            </div>
+            <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li class="active">
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="adventure-tours.html">Adventure Tours</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="sales.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <picture>
+                <source media="(min-width: 64em)" srcset="images/bike-shop-large.jpg">
+                <source media="(min-width: 37.5em)" srcset="images/bike-shop-medium.jpg">
+                <img src="images/bike-shop-small.jpg" alt="The Mountain Spoke Bike Shop.">
+            </picture>
+            <section>
+                <h1>
+                    The Mountain Spoke
+                </h1>
+                <div class="indexPositioning">
+                    <h3>
+                        Welcome!
+                    </h3>
+                    <div class="indexPositioning2">
+                        <p>
+                            We are dedicated to providing all of your bicycle needs, here in the beautiful outdoors of Bozeman, Montana.
+                        </p>
+                            <img src="images/banner-nature-small.jpg" alt="Beautiful trees, lake and mountains of Montana.">
+                    </div>
+                    <p>
+                        Look around our website and you will either find, or have increased, enthusiasm for all things biking. Whether you want to <a href="sales.html">purchase a bike</a>, <a href="service.html">get repairs</a>, <a href="adventure-tours.html">enjoy an adventure</a>, be <a href="events.html">informed of events</a>, or would simply like to <a href="contact.html">contact us</a>, we provide it all.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy;2018 &#124; The Mountain Spoke
+            </p>
+            <p>
+                <a href="reference.html">Resource Reference Page</a>
+            </p>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>
