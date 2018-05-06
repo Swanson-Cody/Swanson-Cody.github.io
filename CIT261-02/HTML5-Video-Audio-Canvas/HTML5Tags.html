@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 Tags</title>
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Learn how to use HTML5 Tags such as Video, Audio, and Canvas.">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>
+            HTML5 Tags: How to use Video, Audio, and Canvas
+        </h1>
+        <div>
+            <section>
+                <h2>
+                    Video
+                </h2>
+                <p>
+                    Ever visited a site and got annoying ads that played video and audio? There was nothing you could do nothing about it? Well, if you can't beat them, join them!
+                    <video width="320" autoplay>
+                        <source src="cookietime.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <p>
+                    Now, lets add controls to a video!
+                    <video width="320" controls poster="alan.jpg">
+                        <source src="snowtime.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <p>
+                    Who says that silent movies are out of fashion?
+                    <video width="320" muted controls poster="alansitting.JPG">
+                        <source src="snowtime.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <p>
+                    How about having something loop over and over?
+                    <video width="320" loop controls>
+                        <source src="tapetime.mp4" type="video/mp4">
+                        Your broswer does not support the video tag.
+                    </video>
+                </p>
+            </section>
+            <section>
+                <h2>
+                    Audio
+                </h2>
+                <p>
+                    Audio can also utilize fun fuctions like autoplay controls, loop and muted.
+                    &#9834;&#9836;&#9833;&#9835;<audio controls>
+                        <source src="birthdaysong.m4a" type="audio/mp4">
+                        Your browser does not support the audio tag.
+                    </audio>&#9835;&#9833;&#9836;&#9834;
+                </p>
+                <p>
+                    Added loop for sake of showing code proficiency.
+                    <audio controls loop>
+                        <source src="ibelieveinchrist.m4a" type="audio/mp4">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </p>
+            </section>
+            <section>
+                <h2>
+                    Canvas
+                </h2>
+                <p>
+                    Canvas is used for drawing graphics on a webpage. It uses JavaScript to do the drawing. HTML5 canvas is just a container for it. Also, canvas is simply a rectangular area. For example:
+                    <canvas id="seeCanvas" width="400" height="200">
+                    </canvas>
+                </p>
+                <p>
+                    Here is an example of utilizing canvas for creating shapes and words:
+                    <canvas id="canvasShape" width="400" height="200">
+                    </canvas>
+                </p>
+            </section>
+        </div>
+        <script src="canvas.js"></script>
+    </body>
+</html>
