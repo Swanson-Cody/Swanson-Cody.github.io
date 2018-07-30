@@ -5,7 +5,7 @@
         <title>JavaScript Basics</title>
         <meta name="author" content="Cody Swanson">
         <meta name="description" content="How to use JavaScript for Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays">
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <h1>
@@ -17,6 +17,9 @@
                 <h2>
                     Example of a function, variables and a conditional statement:
                 </h2>
+                <p>
+                    Please input a number within &quot;Input 1&quot; and &quot;Input 2&quot; to determine which one is greater.
+                </p>
                 <p>
                     Input 1: <input type="text" id="input1"><br>
                     
@@ -32,7 +35,7 @@
                     Example of parameters
                 </h2>
             	<h3>
-                    Please enter the "Temperature" and "Wind Speed" to find out how cold the wind is: 
+                    Please enter the &quot;Temperature&quot; and &quot;Wind Speed&quot; to find out how cold the wind is: 
                 </h3>
                 <p>
                     Temperature <em>(Fahrenheit)</em> <input type="text" id="temp" size="3">
@@ -51,7 +54,7 @@
                     Example of loops
                 </h2>
                 <h3>
-                    Find out the sum of all odd integers between "1" and your "inputed number."
+                    Find out the sum of all odd integers between &quot;1&quot; and your &quot;inputed number.&quot;
                 </h3>
                 <p>
                     Input integer: <input type="text" id="inputInteger">
@@ -74,6 +77,24 @@
                     <button type="button" onclick="doCalcs()">Count</button>
                 </p>
                 <div id="outputDiv4"></div>
+            </section>
+            <section>
+                <h2>
+                    Example of an associative array
+                </h2>
+                <h3>
+                    Some bad guys in the scriptures:
+                </h3>
+                <?php 
+                    $baddies = array(
+                    "Book of Mormon"=>" Korihor, Nehor, Laman and Lemuel, Laban, Sherem, Amulon, King Noah, Amalickiah, Zerahemnah, Kishkumen, Gadianton, Pachus and the King-men", 
+                                     
+                    "Bible"=>" Pharoah, Philistines, Cain, Goliath, Rabshakeh, Daughter of Herodias, Herod, Caiaphas, Judas, Priests of Baal, Haman, Presidents and princes of Darius");
+                
+                    echo nl2br ( "Book of Mormon Bad Guys:\n" . $baddies['Book of Mormon'] . " and others.\n\n");
+                    
+                    echo nl2br ("Bible Bad Guys:\n" . $baddies['Bible'] . " and others.\n\n");
+                ?>
             </section>
             
         </main>

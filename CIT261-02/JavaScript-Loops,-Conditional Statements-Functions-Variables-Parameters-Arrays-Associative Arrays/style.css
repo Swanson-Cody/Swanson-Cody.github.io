@@ -26,3 +26,6 @@ h1 span {
 div {
     padding-bottom: 12px;
 }
+section:last-of-type {
+    padding-bottom: 24px;
+}
