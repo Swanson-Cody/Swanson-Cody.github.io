@@ -1,0 +1,76 @@
+/*-----------------Basics Page Structure------------------*/
+.basicsOverallStructure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.basicsOverallStructure img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+.basicsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 20px;
+    border-bottom: 3px dashed saddlebrown;
+}
+.basicsSection:last-of-type {
+    border-bottom: none;
+}
+.basicsSection:first-of-type {
+    margin-bottom: 40px;
+}
+.basicsSectionText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: 
+}
+h4 {
+    margin-bottom: -12px;
+    margin-top: 15px;
+}
+div.basicsSection ul {
+    list-style-type: none;
+}
+picture {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+/******************************************/
+/************Medium Media Query************/
+@media only screen and (min-width: 37.5em) {
+    .basicsOverallStructure {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+/*****************************************/
+/************Large Media Query************/
+@media only screen and (min-width: 64em) {
+    .basicsOverallStructure {
+        width: 1000px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Time For Ukes About Page.">
+        <title>Time For Ukes | About Site</title>
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/about.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135978197-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-135978197-1');
+            gtag('config', 'AW-833936690');
+        </script>
+    </head>
+    <body>
+        <header>
+            <picture class="logo">
+                 <source media="(min-width: 64em)" srcset="images/TimeForUkesLogoLarge.png">
+                <source media="(min-width: 37.5em)" srcset="images/TimeForUkesLogoMedium.png">
+                <img src="images/TimeForUkesLogoSmall.png" alt="Time For Ukes Logo">
+            </picture>
+            
+            <input id="toggleMenu" type="checkbox">
+            <label for="toggleMenu" class="hamburgerIcon">
+                <span class="stripes stripe1"></span>
+                <span class="stripes stripe2"></span>
+                <span class="stripes stripe3"></span>
+            </label>
+            <label for="toggleMenu" class="hideDropDownMenu"></label>
+            
+            <nav class="dropDownMenu">
+                <a class="navLinkOptions homeLink" href="index.html">Home</a>
+                <hr>
+                <a class="navLinkOptions compositionLink" href="composition.html">Composition</a>
+                <hr>
+                <a class="navLinkOptions typesLink" href="types.html">Types</a>
+                <hr>
+                <a class="navLinkOptions aboutLink active" href="#">About Site</a>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Get to know Time For Ukes!
+            </h1>
+            <section class="rowLayout">
+                <figure>
+                    <img class="imgUnity" src="images/author.jpg" alt="Drawing of website author holding a ukulele.">
+                    <figcaption>
+                        Depiction of Cody Swanson <span>&#40;As rendered by his neice at age six&#58; Alesandra Avalon&#46;&#41;</span>
+                    </figcaption>
+                </figure>
+                <div class="columnLayout">
+                    <h2>
+                        About the Author
+                    </h2>
+                    <p>
+                        My name is Cody Swanson&#46;
+                    </p>
+                    <p>
+                        I am currently enrolled with BYUI Online&#46; Time For Ukes is being created as part of a semester long project from B 250 &#45; Web Business Creation&#46;
+                    </p>
+                    <p>
+                        While growing up I always thought it would be neat to learn how to play the ukulele&#46; However&#44; it wasn't until the age of 27 that I actually bought a &dollar;20&#46;00 laminate ukulele and began to learn&#46;
+                    </p>
+                    <p>
+                        Time For Ukes is a growing project of mine&#46; The goal is to make learning the ukulele simple and fun&#46; This site will eventually incorporate videos and pdf documents that will help make learning how to play just that&#58; Simple and fun&#46;
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy;2019 | Time For Ukes
+            </p>
+        </footer>
+    </body>
+</html>

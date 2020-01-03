@@ -1,0 +1,47 @@
+/*--------------------About Page Structure------------------*/
+.imgUnity {
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+}
+figcaption span {
+    font-size: .6em;
+}
+.rowLayout {
+    text-align: center;
+}
+/******************************************/
+/************Medium Media Query************/
+@media only screen and (min-width: 37.5em) {
+    .imgUnity {
+        width: auto;
+    }
+}
+/*****************************************/
+/************Large Media Query************/
+@media only screen and (min-width: 64em) {
+    figcaption {
+        max-width: 500px;
+    }
+    .rowLayout {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        text-align: left;
+    }
+    .columnLayout {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}

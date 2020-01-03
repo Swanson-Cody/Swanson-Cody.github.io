@@ -1,0 +1,261 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html {
+    cursor: url(https://www.timeforukes.com/images/ukulelecursor.png), auto;
+}
+body {
+    background-color: #ffdead;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter', serif;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+h2 {
+    font-size: 2em;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ffdead;
+    border-bottom: 6px solid #DAA520;
+    border-radius: 15px 15px 0 0;
+    background: url(../images/bownTexture.jpg) bottom right;
+}
+nav .active {
+    color: #DAA520;
+}
+main {
+    border: 2px solid #8B4513;
+    padding: 1rem;
+}
+main a {
+    color: #DAA520;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.5em;
+}
+main a:link {
+    color: #DAA520;
+}
+main a:hover {
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+main a:active {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+}
+
+/****************************/
+/*****Navigation Button******/
+.hamburgerIcon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    background-color: #8B4513;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid black;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    cursor: pointer;
+}
+.stripes {
+    width: 1.5rem;
+    height: .2rem;
+    background-color: #ffdead;
+    margin: .1rem;
+}
+.hideDropDownMenu{
+    position: fixed;
+    left: -1000px;
+    bottom: 0;
+    right: 0;
+    background-color: lightgray;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 98;
+    -webkit-transition: left .2s, top .2s;
+    -o-transition: left .2s, top .2s;
+    transition: left .2s, top .2s;
+}
+.dropDownMenu {
+    background-color: #8B4513;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    z-index: 99;
+    -webkit-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid black;
+}
+.navLinkOptions {
+    font-size: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.2rem 2.5rem;
+    color: #ffdead;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.navLinkOptions:active{
+    color: #DAA520;
+}
+#toggleMenu {
+    display: none;
+}
+#toggleMenu:checked ~ nav.dropDownMenu {
+    left: 0;
+}
+#toggleMenu:checked ~ .hideDropDownMenu {
+    left: 0;
+    top: 0;
+}
+.stripe1 {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: -webkit-transform .4s ease-in-out;
+    -o-transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+.stripe2 {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: -webkit-transform .4s ease-in-out;
+    -o-transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+.stripe3 {
+    -webkit-transition: margin-top .5s ease-in-out;
+    -o-transition: margin-top .5s ease-in-out;
+    transition: margin-top .5s ease-in-out;
+}
+#toggleMenu:checked ~ .hamburgerIcon {
+    position: fixed;
+}
+#toggleMenu:checked ~ .hamburgerIcon > .stripe1 {
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 20px;
+    right: 9px;
+}
+#toggleMenu:checked ~ .hamburgerIcon > .stripe2 {
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 20px;
+    right: 9px;
+}
+#toggleMenu:checked ~ .hamburgerIcon > .stripe3 {
+    margin-top: 50px;
+}
+
+
+/**************************/
+/***********Footer*********/
+footer {
+    color: #ffdead;
+    background-color: #8B4513;
+    border-top: 6px solid #DAA520;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-radius: 0 0 12px 12px;
+}
+
+
+/******************************************/
+/************Medium Media Query************/
+@media only screen and (min-width: 37.5em) {
+    body {
+        border: 2px solid #8B4513;
+        border-radius: 15px 15px 15px 15px;
+    }
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border: none;
+        border-bottom: 6px solid #DAA520;
+    }
+    .logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .hamburgerIcon, .hideDropDownMenu {
+        display: none;
+    }
+    .dropDownMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: static;
+        border-radius: 0;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    nav hr {
+        display: none;
+    }
+    .navLinkOptions {
+        margin: 0;
+    }
+    .navLinkOptions:hover {
+        color: #DAA520;
+    }
+    .navLinkOptions:active {
+        color: tan;
+        color: rgba(218, 165, 32, .8);
+    }
+    main {
+        border: none;
+    }
+}
+    
+/*****************************************/
+/************Large Media Query************/
+@media only screen and (min-width: 64em) {
+    header {
+        background-size: cover;
+    }
+}

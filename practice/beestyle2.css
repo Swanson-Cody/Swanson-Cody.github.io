@@ -1,0 +1,214 @@
+/*==============Google font============*/
+
+/* This is an example of how to use google fonts. You don't need to do anything with this code, it is just here as a reference. Notice that you include this @import line, and then you use the font-family like normal everywhere else in the document. */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+
+
+body{
+
+	font-family: 'Libre Baskerville', serif;
+
+	/* Set the default font size for the body text below this comment. Reference the screenshot to know what size to make this text. Use "em" for font size. */
+
+	font-size: .8em;
+
+  width: 930px;
+	
+	margin: auto;
+
+}
+
+
+
+
+
+
+/*==============Web safe fonts============*/
+
+/* Check out this site for more web safe font families http://www.w3schools.com/cssref/css_websafe_fonts.asp */
+
+/* You can make a single CSS rule apply to multiple elements by using a comma between each selector. The following rule will apply to all the headings on the page (h1-h6). */
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+
+
+
+
+/*==============Header============*/
+
+/* This rule is using a decedent selector (Take a look at page 238 in the book to learn more about decedent selectors). Use the screenshot */
+
+
+
+header h1{
+
+	/*Write a declaration (property: value;) below this comment that will change the capitalization of the h1's font without rewriting the code in the HTML. */
+
+  text-transform: capitalize;
+
+	/* Write a declaration (property: value;) below this comment to set the font size of this h1 ("A Beekeeping Resource") using a percent. The exact percent is not provided for you in the screenshot. Try to match the size visually. */
+
+  font-size: 155%;
+
+	/* Write a declaration (property: value;) below this comment to set the font color using a hex code. You will need to use Photoshop to eyedrop this color from the screenshot. */
+
+  color: #7f7349;
+
+	/* Write a declaration (property: value;) below this comment to set the letter spacing of this h1 ("A Beekeeping Resource") using EMs. The exact spacing is not provided for you in the screenshot. Try to match the spacing visually. */
+
+  letter-spacing: .37em;
+
+
+}
+
+
+
+
+
+
+/*==============Main Navigation============*/
+
+/* The following two rules effect only the <ul>s and <li>'s in the <nav>. The selector "nav ul" would be read, "Find all nav tags, then find any children that are <ul>s, and select them." These are more specific so that other list on the page won't be styled the same */
+
+header nav ul {
+
+	/* Write a declaration (property: value;) below this comment to change the background color of this <ul> using a hex color. You will need to use Photoshop to eyedrop this color from the screenshot. */
+	
+	background-color: #f2cc0f;
+	
+	width: 20px;
+	
+	height: 200px;
+	
+	padding-top: 45px;
+	
+	border: 2px solid #958839;
+
+}
+
+main{
+	background-color: #f8d90c;
+	padding: 30px;
+	border:  2px solid #a58634;
+}
+
+header nav li{
+
+	/* Write a declaration (property: value;) below this comment to change the background color of the <li>s using an rgba color. You will need to use Photoshop to eyedrop this color from the screenshot. This might not be exactly the same color since there is an opacity. */
+	
+	background-color: rgb(147,125,39);
+	
+	width: 220px;
+	
+	padding: 8px;
+	
+	padding-left: 5px;
+	
+	margin-bottom: 7px;
+	
+	margin-left: -6px;
+	
+  box-shadow: 3px 3px 3px black;
+	
+	list-style-type: none;
+}
+
+
+
+
+
+
+/*==============LINK STYLE============*/
+
+/* You will need to style your links using the colors defined in the screenshot. Use hex codes for all of these link colors. You will need to make sure that the other links on this page don't also get styled the same. This will work very similar to how the main navigation selectors work above. You need to be specific. */
+
+nav li a:link{
+  color: #f3ffa9;
+	text-decoration: none;
+}
+nav li a:visited{
+	color: #f3ffa9;
+}
+nav li a:hover{
+	color: #f7c411;
+}
+nav li a:active{
+  color: #fffaff;
+}
+
+
+
+
+
+/*==============MAIN STYLE============*/
+
+/*use the screenshot to make the appropriate changes to these elements*/
+
+h2{
+	font-size: 14px;
+  font-style: italic;
+}
+
+section h2{
+  font-size: 20px;
+	font-style: normal;
+}
+#bees{
+	background-color: #fafcca;
+	border: 1px solid #ad9652;
+	padding: 30px;
+	margin-bottom: 40px;
+	margin-top: 60px;
+}
+#bees h2 {
+	border: 1px solid #ad9652;
+	background-color: #ffffff;
+	color: #b19554;
+	padding: 10px;
+	margin-top: -10px;
+	margin-right: 91%;
+	border-radius: 20px 20px 0px 20px;
+	margin-bottom: -10px
+}
+#blossoms{
+	background-color: #fafcca;
+	border: 1px solid #ad9652;
+	padding: 30px;
+	margin-bottom: 20px;
+	height: 500px;
+	overflow: auto;
+}
+#blossoms h2 {
+		border: 1px solid #ad9652;
+	background-color: #ffffff;
+	color: #b19554;
+	padding: 10px;
+	margin-top: -10px;
+	margin-right: 84%;
+	border-radius: 20px 20px 0px 20px;
+	margin-bottom: -10px
+}
+footer{
+  text-align: center;
+	background-color: #aa974a;
+	color: #f3ffa9;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	border-radius: 0px 0px 20px 20px;
+	margin-bottom: 20px;
+}
+footer nav ul{
+	padding-top: 4px; 
+}
+footer nav li{
+	display: inline;
+	padding-right: 15px;
+	text-decoration: underline;
+}
+

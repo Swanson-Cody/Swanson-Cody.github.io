@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cody Swanson">
+        <meta name="description" content="Time For Ukes Homepage.">
+        <title>Time For Ukes | Home Page</title>
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/home.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135978197-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-135978197-1');
+            gtag('config', 'AW-833936690');
+        </script>
+    </head>
+    <body>
+        <header>
+            <picture class="logo">
+                 <source media="(min-width: 64em)" srcset="images/TimeForUkesLogoLarge.png">
+                <source media="(min-width: 37.5em)" srcset="images/TimeForUkesLogoMedium.png">
+                <img src="images/TimeForUkesLogoSmall.png" alt="Time For Ukes Logo">
+            </picture>
+            
+            <input id="toggleMenu" type="checkbox">
+            <label for="toggleMenu" class="hamburgerIcon">
+                <span class="stripes stripe1"></span>
+                <span class="stripes stripe2"></span>
+                <span class="stripes stripe3"></span>
+            </label>
+            <label for="toggleMenu" class="hideDropDownMenu"></label>
+            
+            <nav class="dropDownMenu">
+                <a class="navLinkOptions homeLink active" href="#">Home</a>
+                <hr>
+                <a class="navLinkOptions compositionLink" href="composition.html">Composition</a>
+                <hr>
+                <a class="navLinkOptions typesLink" href="types.html">Types</a>
+                <hr>
+                <a class="navLinkOptions aboutLink" href="about.html">About Site</a>
+            </nav>
+        </header>
+        <main>
+            <div class="spacingNeeded">
+                <h1>
+                    Welcome!
+                </h1>
+                <p>
+                    Let's get to know ukulele's better. Whether you play the ukulele, or are simply interested in learning about the instrument, this website will provide fundamental basics for you.
+                </p>
+            </div>
+            <div class="streamLine">
+                <section>
+                    <div class="polaroid">
+                        <picture>
+                            <source class="imgControl" media="(min-width: 64em)" srcset="images/ukulelesForPurchaseSmall.jpg">
+                            <source class="imgControl" media="(min-width: 37.5em)" srcset="images/ukulelesForPurchaseMedium.jpg">
+                            <img class="imgControl" src="images/ukulelesForPurchaseSmall.jpg" alt="Ukuleles showcased on a wall.">
+                        </picture>
+                        <h3>
+                            Interested in purchasing a ukulele?
+                        </h3>
+                        <p>
+                            <a class="spaceNeededPolLink" href="https://www.guitarcenter.com/Ukuleles.gc?typeAheadRedirect=true" target="_blank">Guitar Center</a>
+                            <a class="spaceNeededPolLink" href="https://www.amazon.com/Best-Sellers-Musical-Instruments-Ukuleles/zgbs/musical-instruments/11971501" target="_blank">Amazon</a>
+                            <a class="spaceNeededPolLink" href="https://www.theukulelesite.com/shop-by.html" target="_blank">The Ukulele Site</a>
+                            <a class="spaceNeededPolLink" href="http://www.musiciansfriend.com/ukuleles" target="_blank">Musician's Friend</a>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="polaroid">
+                        <picture>
+                            <source class="imgControl" media="(min-width: 64em)" srcset="images/UkuleleTypesSmall.png">
+                            <source class="imgControl" media="(min-width: 37.5em)" srcset="images/UkuleleTypesMedium.png">
+                            <img class="imgControl" src="images/UkuleleTypesSmall.png" alt="Four different types of Ukuleles with measurements displayed.">
+                        </picture>
+                        <h3>
+                            Want to learn about the basic types of ukuleles? 
+                        </h3>
+                        <p>
+                            Visit our <a href="types.html">Types page</a>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="polaroid">
+                        <picture>
+                            <source class="imgControl" media="(min-width: 64em)" srcset="images/ukeCategoriesSmall.png">
+                            <source class="imgControl" media="(min-width: 37.5em)" srcset="images/ukeCategoriesMedium.png">
+                            <img class="imgControl" src="images/ukeCategoriesSmall.png" alt="Ukulele">
+                        </picture>
+                        <h3>
+                            What are the parts of a ukulele?
+                        </h3>
+                        <p>
+                            Want to know what constitutes the basic parts of a ukulele? Visit our <a href="composition.html">Composition page</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+            <footer>
+                <p>
+                    &copy;2019 | Time For Ukes
+                </p>
+            </footer>
+    </body>
+</html>

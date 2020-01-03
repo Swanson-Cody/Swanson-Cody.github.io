@@ -1,0 +1,116 @@
+body {
+	background-color: #f8ffb0;
+	margin: 0px;
+	text-align: center;
+	border-top: 70px solid #52471b;
+}
+header {
+	background-color: yellow;
+	border-top: 8px solid #87752d;
+	text-align: center;
+}
+.logo {
+	margin-top: -50px;
+}
+
+header h1 {
+	color: #87752d;
+	margin: 0;
+	padding-bottom: 14px;
+	font-size: 1em;
+}
+nav {
+	background-color: #87752d;
+	border-top: 2px solid #52471b;
+	border-bottom: 2px solid #52471b;
+	width: 100%;
+	text-align: center;
+}
+nav li {
+	display: inline;
+	padding-left: 30px;
+}
+nav li a:link {
+	text-decoration: none;
+	color: #f8ffb0;
+	text-align: center; 
+}
+nav li a:visited {
+    color: #f6fc90;
+}
+nav li a:hover {
+    color: #fffc58;
+}
+nav li a:active {
+    color: #ffffff;
+}
+.container {
+	max-width: 870px;
+	margin: 0 auto;
+}
+main figure {
+	display: inline-block;
+	background-color: #87752d;
+	border-radius: 5px;
+	margin: 3px;
+    margin-top: 100px;
+}
+main figure img{
+	background-color: #87752d;
+	padding: 5px;
+	border-radius: 5px;
+	color: #f8ffb0;
+	text-align: center;
+}
+main figcaption {
+	color: #f8ffb0;
+	padding-bottom: 8px;
+}
+blockquote {
+	font-size: 2em;
+	width: 500px;
+	margin: auto;
+	color: #52471b;
+	margin-top: 40px;
+	margin-bottom: 150px;
+}
+footer {
+	background-color: #52471b;
+	color: #f2cc10;
+	border-top: 10px solid #87752d;
+	padding: 20px;
+}
+#nextline {
+	display: inherit
+}
+
+
+
+
+.siteReturn {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: yellow;
+    font-family: "Courier New", Courier, monospace;
+    padding: 15px 35px 15px 35px;
+    border-radius: 0px 0px 20px 20px;
+}
+ .siteReturn a {
+    color: #52471b;
+    text-decoration: none;
+}
+.siteReturn a:link {
+    text-decoration: none;
+    color: #52471b;
+}
+
+.siteReturn a:visited {
+    color: #52471b;
+}
+.siteReturn a:hover {
+    color: #87752d;
+}
+.siteReturn a:active {
+    text-decoration: underline;
+}
